@@ -1,0 +1,473 @@
+/* ==========================================================================
+   1. Base Setup & Fluid Full-Width Settings
+   ========================================================================== */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}   
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    background-color: #1c1c1c; 
+    color: #ffffff; 
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. Header & Branding Section
+   ========================================================================== */
+.myLogo {
+    width: 100%;
+    height: 120px;
+    background-color: #262626; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border-bottom: 3px solid #8b5a2b; 
+    overflow: hidden; 
+}
+
+.myLogo img {
+    height: 90%;
+    width: auto;
+    object-fit: contain; 
+    padding: 5px; 
+    display: block;
+}
+
+.myHeader {
+    width: 100%;
+    height: 120px;
+    background-color: #262626; 
+    border-radius: 6px;
+    border-bottom: 3px solid #8b5a2b; 
+    overflow: hidden; 
+}
+
+.banner-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+/* ==========================================================================
+   3. Workspace Fluid Layout Engines
+   ========================================================================== */
+.main-workspace {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left_panel {
+    width: 100%; 
+    padding: 20px;
+    background-color: #262626;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
+
+.left_panel h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    padding: 12px;
+    background-color: #1c1c1c;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    border: 1px solid #333333;
+}
+
+.nav-links a:hover {
+    background-color: #8b5a2b; 
+    border-color: #8b5a2b;
+}
+
+.right-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-top-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contents-box {
+    padding: 20px;
+    background-color: #262626;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents-box h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ffffff; 
+}
+
+.info-layout {
+    justify-content: flex-start !important;
+}
+.info-layout p {
+    margin-top: 10px;
+}
+
+.full-width-location {
+    width: 100%;
+}
+
+/* ==========================================================================
+   4. FIX: New Arrivals Fluid Even Distribution Layout Engine
+   ========================================================================== */
+.arrivals-even-distribution {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between; /* Dynamically spaces out items, dropping the gap */
+}
+
+/* Allows card blocks to expand uniformly into their respective thirds */
+.inline-card {
+    flex: 1 1 calc(33.333% - 10px); 
+    min-width: 130px; /* Keeps layout friendly on shrinking portable views */
+}
+
+/* ==========================================================================
+   5. Catalog & Shared Component Cards
+   ========================================================================== */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.catalog-section-title {
+    color: #8b5a2b;
+    font-size: 1.3rem;
+    margin: 25px 0 10px 0;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.product-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-4px); 
+    border-color: #8b5a2b; 
+    box-shadow: 0 6px 15px rgba(139, 90, 43, 0.25); 
+}
+
+.product-image-wrapper {
+    width: 100%;
+    height: 140px;
+    background-color: #262626;
+    overflow: hidden;
+}
+
+.product-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover .product-image-wrapper img {
+    transform: scale(1.05); 
+}
+
+.product-category-tag {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.product-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-info h3 {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-info p {
+    font-size: 0.85rem;
+    color: #8b5a2b; 
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   6. Shopping Cart Widget Elements
+   ========================================================================== */
+.cart-list {
+    list-style: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #333333;
+    font-size: 0.8rem;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.cart-item-qty {
+    font-size: 0.75rem;
+    color: #aaaaaa;
+}
+
+.cart-item-price {
+    color: #8b5a2b;
+    font-weight: bold;
+}
+
+.cart-total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    border-top: 1px solid #333333;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+}
+
+.cart-total-price {
+    color: #8b5a2b;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #8b5a2b;
+    color: #ffffff !important;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.checkout-btn:hover {
+    background-color: #a06c3a;
+}
+
+/* ==========================================================================
+   7. General Input / Interaction Components
+   ========================================================================== */
+input[type="text"], input[type="password"] {
+    background-color: #1c1c1c;
+    border: 1px solid #444444;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+input:focus {
+    outline: 1px solid #8b5a2b;
+    border-color: #8b5a2b;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #333333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #8b5a2b;
+}
+
+.shoe-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shoe-detail-img img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* ==========================================================================
+   8. Shared Layout Footer & Social Adjustments
+   ========================================================================== */
+.myFooter {
+    width: 100%;
+    padding: 25px 20px;
+    background-color: #262626;
+    border-top: 3px solid #8b5a2b;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.footer-nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.footer-nav-links .divider,
+.footer-social-links .divider {
+    color: #444444;
+    margin: 0 8px;
+}
+
+.footer-social-links {
+    margin: 12px 0;
+}
+
+.footer-social-links a {
+    color: #8b5a2b;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.footer-social-links a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: #aaaaaa;
+    margin-top: 8px;
+}
+
+/* ==========================================================================
+   9. Desktop Screen Layout Engine (100% Fluid Edge-to-Edge Mechanics)
+   ========================================================================== */
+@media (min-width: 992px) {
+    .myLogo {
+        width: 160px;
+    }
+    .myHeader {
+        flex: 1;
+        width: auto;
+    }
+
+    .main-workspace {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .left_panel {
+        width: 250px;
+        flex-shrink: 0;
+    }
+    
+    .right-content-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dashboard-top-row {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .dynamic-wide {
+        flex: 2; 
+    }
+
+    .compact-box {
+        flex: 1; 
+    }
+
+    .contents-box {
+        justify-content: space-between; 
+    }
+
+    .full-width-view {
+        width: 100%;
+    }
+}
