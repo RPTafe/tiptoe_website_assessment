@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <title>Your Cart - TipToe Soles</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="myLogo">
+        <img src="images/TipToe_Soles_Logo_colour.png" alt="TipToe Soles Logo">
+    </div>
+
+    <div class="myHeader">
+        <div class="banner-placeholder">
+            <img src="images/banner_leather_hiking_boots.jpg" alt="Leather Hiking Boots Banner">
+        </div>
+    </div>
+
+    <div style="display: flex; width: 100%; flex-wrap: wrap; gap: 15px;">
+        
+        <div class="content-area full-width-view">
+            <div class="contents-box">
+                <a href="index.html" class="back-btn">← Continue Shopping</a>
+                <h2>Review Your Order</h2>
+                
+                <ul class="cart-list">
+                    <li class="cart-item" style="padding: 15px 0;">
+                        <div class="cart-item-details">
+                            <span class="cart-item-name" style="font-size: 1.1rem;">GARY (Tan)</span>
+                            <span class="cart-item-qty">Qty: 1 | Size: US 9</span>
+                        </div>
+                        <span class="cart-item-price" style="font-size: 1.1rem;">$79.00</span>
+                    </li>
+                    <li class="cart-item" style="padding: 15px 0;">
+                        <div class="cart-item-details">
+                            <span class="cart-item-name" style="font-size: 1.1rem;">Sally (Black)</span>
+                            <span class="cart-item-qty">Qty: 1 | Size: US 8</span>
+                        </div>
+                        <span class="cart-item-price" style="font-size: 1.1rem;">$75.00</span>
+                    </li>
+                </ul>
+
+                <div class="cart-total-container" style="margin-top: 25px; padding-top: 20px;">
+                    <span style="font-size: 1.2rem;">Order Total:</span>
+                    <span class="cart-total-price" style="font-size: 1.4rem;">$154.00</span>
+                </div>
+            </div>
+
+            <div class="contents-box">
+                <h2>Secure Checkout</h2>
+                <form action="#" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px;">
+                    <div>
+                        <label style="display:block; margin-bottom: 6px;">Shipping Address:</label>
+                        <input type="text" placeholder="Street Address" style="width: 100%; margin-bottom: 10px;" required>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" placeholder="City/Suburb" style="flex: 2;" required>
+                            <input type="text" placeholder="State" style="flex: 1;" required>
+                            <input type="text" placeholder="Postcode" style="flex: 1;" required>
+                        </div>
+                    </div>
+                    
+                    <div style="border-top: 1px solid #333333; padding-top: 15px; margin-top: 10px;">
+                        <label style="display:block; margin-bottom: 6px;">Payment Details:</label>
+                        <input type="text" placeholder="Cardholder Name" style="width: 100%; margin-bottom: 10px;" required>
+                        <input type="text" placeholder="Card Number" style="width: 100%; margin-bottom: 10px;" required>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" placeholder="MM / YY" style="flex: 1;" required>
+                            <input type="text" placeholder="CVV" style="flex: 1;" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" style="width: 100%; padding: 14px; background-color: #8b5a2b; color: #ffffff; font-weight: bold; cursor: pointer; border: none; font-size: 1.1rem; margin-top: 10px; border-radius: 4px;">
+                        Place Secure Order
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="myFooter">
+        <h2>TipToe Soles</h2>
+        <p class="copyright">© 2026 TipToe. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

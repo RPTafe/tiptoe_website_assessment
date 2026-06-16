@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <title>TipToe Soles - Premium Footwear</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="myLogo" onclick="showPage('home')" style="cursor: pointer;">
+        <img src="images/TipToe_Soles_Logo_colour.png" alt="TipToe Soles Logo">
+    </div>
+
+    <div class="myHeader">
+        <div class="banner-placeholder">
+            <img src="images/banner_leather_hiking_boots.jpg" alt="Leather Hiking Boots Banner">
+        </div>
+    </div>
+
+    <div class="main-workspace">
+        
+        <div class="left_panel">
+            <h1 style="margin-top: 0px; color: #ffffff;">Menu</h1>
+            <div style="margin-bottom: 20px; display: flex; gap: 5px;">
+                <input type="text" placeholder="Search.." style="flex: 1; min-width: 0;">
+                <button type="button" style="background-color: #8b5a2b; color: #ffffff; font-weight: bold; cursor: pointer; border: none;">Go</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('catalog')">Shop All Shoes</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="#" onclick="showPage('services')">Services</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('delivery')">Delivery Policy</a></li>
+                <li><a href="#" onclick="showPage('policy')">Returns Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="right-content-wrapper home-view">
+            
+            <div class="dashboard-top-row">
+                <div class="contents-box dynamic-wide">
+                    <h2>New Arrivals</h2>
+                    <div class="arrivals-even-distribution">
+                        <div class="product-card inline-card" onclick="showPage('shoe-gary')">
+                            <span class="product-category-tag">Men</span>
+                            <div class="product-image-wrapper">
+                                <img src="images/Gary_Tan.jpg" alt="GARY">
+                            </div>
+                            <div class="product-info">
+                                <h3>GARY</h3>
+                                <p>$79.00</p>
+                            </div>
+                        </div>
+                        <div class="product-card inline-card" onclick="showPage('shoe-work-walk')">
+                            <span class="product-category-tag">Men</span>
+                            <div class="product-image-wrapper">
+                                <img src="images/Work_and_Walk_Chesnut.jpg" alt="Work and Walk">
+                            </div>
+                            <div class="product-info">
+                                <h3>Work & Walk</h3>
+                                <p>$85.00</p>
+                            </div>
+                        </div>
+                        <div class="product-card inline-card" onclick="showPage('shoe-sally')">
+                            <span class="product-category-tag">Women</span>
+                            <div class="product-image-wrapper">
+                                <img src="images/Sally_Tan.jpg" alt="Sally">
+                            </div>
+                            <div class="product-info">
+                                <h3>Sally</h3>
+                                <p>$75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contents-box compact-box">
+                    <form action="#">
+                        <h2>Login</h2>
+                        <label style="display:block; margin-bottom: 3px; font-size: 0.85rem;">First Name:</label>
+                        <input type="text" id="fname1" name="fname1" style="width: 100%; margin-bottom: 8px; padding: 6px;">
+                        <label style="display:block; margin-bottom: 3px; font-size: 0.85rem;">Password:</label>
+                        <input type="password" id="pass" name="password" style="width: 100%; margin-bottom: 12px; padding: 6px;">
+                        <button type="button" style="width: 100%; padding: 10px; background-color: #8b5a2b; color: #ffffff; font-weight: bold; cursor: pointer; border: none; border-radius: 4px;">Login</button>
+                    </form>
+                </div>
+                
+                <div class="contents-box compact-box">
+                    <h2>Your Cart</h2>
+                    <ul class="cart-list">
+                        <li class="cart-item">
+                            <div class="cart-item-details">
+                                <span class="cart-item-name">GARY (Tan)</span>
+                                <span class="cart-item-qty">Qty: 1</span>
+                            </div>
+                            <span class="cart-item-price">$79.00</span>
+                        </li>
+                        <li class="cart-item">
+                            <div class="cart-item-details">
+                                <span class="cart-item-name">Sally (Black)</span>
+                                <span class="cart-item-qty">Qty: 1</span>
+                            </div>
+                            <span class="cart-item-price">$75.00</span>
+                        </li>
+                    </ul>
+                    <div class="cart-total-container">
+                        <span>Total:</span>
+                        <span class="cart-total-price">$154.00</span>
+                    </div>
+                    <a href="cart.html" class="checkout-btn">Checkout</a>
+                </div>
+            </div>
+
+            <div class="contents-box full-width-location">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.496281577349!2d150.7578866!3d-34.51565240000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b130dfa99749c6b%3A0xc8f094acf620ef1b!2s322%20Avondale%20Rd%2C%20Avondale%20NSW%202530!5e0!3m2!1sen!2sau!4v1781574550909!5m2!1sen!2sau" height="180" style="border:0; border-radius: 4px; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <div class="contents-box full-width-view catalog-view" style="display: none;">
+            <button class="back-btn" onclick="showPage('home')">←Back to Home</button>
+            <h2>Our Full Collection</h2>
+            
+            <div class="catalog-section-title">Men's Shoes</div>
+            <div class="catalog-grid">
+                <div class="product-card" onclick="showPage('shoe-gary')">
+                    <span class="product-category-tag">Men</span>
+                    <div class="product-image-wrapper">
+                        <img src="images/Gary_Tan.jpg" alt="GARY">
+                    </div>
+                    <div class="product-info">
+                        <h3>GARY</h3>
+                        <p>$79.00</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="showPage('shoe-work-walk')">
+                    <span class="product-category-tag">Men</span>
+                    <div class="product-image-wrapper">
+                        <img src="images/Work_and_Walk_Chesnut.jpg" alt="Work and Walk">
+                    </div>
+                    <div class="product-info">
+                        <h3>Work and Walk</h3>
+                        <p>$85.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-section-title">Women's Shoes</div>
+            <div class="catalog-grid">
+                <div class="product-card" onclick="showPage('shoe-sally')">
+                    <span class="product-category-tag">Women</span>
+                    <div class="product-image-wrapper">
+                        <img src="images/Sally_Tan.jpg" alt="Sally">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sally</h3>
+                        <p>$75.00</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="showPage('shoe-heavenly')">
+                    <span class="product-category-tag">Women</span>
+                    <div class="product-image-wrapper">
+                        <img src="images/Heavenly_Black.jpg" alt="Heavenly">
+                    </div>
+                    <div class="product-info">
+                        <h3>Heavenly</h3>
+                        <p>$90.00</p>
+                    </div>
+                </div>
+                <div class="product-card" onclick="showPage('shoe-clancy')">
+                    <span class="product-category-tag">Women</span>
+                    <div class="product-image-wrapper">
+                        <img src="images/Clancy_Blue.jpg" alt="Clancy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Clancy</h3>
+                        <p>$59.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents-box full-width-view shoe-gary-view info-layout" style="display: none;">
+            <button class="back-btn" onclick="goBack()">←Back</button>
+            <h2>MENS SHOES — GARY</h2>
+            <div class="shoe-detail-container">
+                <div class="shoe-gallery">
+                    <div class="shoe-detail-img"><img src="images/Gary_Tan.jpg" alt="Gary Tan"></div>
+                </div>
+                <div class="shoe-detail-content">
+                    <div class="shoe-specs">
+                        <p><strong>Colours:</strong> Tan and midnight</p>
+                        <p><strong>Sizes:</strong> US 6, 7, 8, 9, 10, 11</p>
+                        <h3 class="shoe-price">$79.00</h3>
+                    </div>
+                    <p class="shoe-description">
+                        Look good, feel great in these comfort sneakers you won't want to take off.
+                    </p>
+                    <ul class="shoe-bullet-points">
+                        <li>Soft leather uppers</li>
+                        <li>Breathable mesh lining</li>
+                        <li>Removable footbed with soft mesh sock lining</li>
+                        <li>Contoured footbed with additional heel padding</li>
+                        <li>Orthotic friendly</li>
+                    </ul>
+                    <div class="materials-box">
+                        <h4>Materials & Details</h4>
+                        <table class="materials-table">
+                            <tr><td>Product Code:</td><td>30213</td></tr>
+                            <tr><td>Sole Material:</td><td>Rubber</td></tr>
+                            <tr><td>Sock Material:</td><td>Synthetic</td></tr>
+                            <tr><td>Lining Material:</td><td>Eco friendly</td></tr>
+                            <tr><td>Upper Material:</td><td>Leather</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents-box full-width-view shoe-work-walk-view info-layout" style="display: none;">
+            <button class="back-btn" onclick="goBack()">←Back</button>
+            <h2>MENS SHOES — Work and Walk</h2>
+            <div class="shoe-detail-container">
+                <div class="shoe-gallery">
+                    <div class="shoe-detail-img"><img src="images/Work_and_Walk_Chesnut.jpg" alt="Work Boot"></div>
+                </div>
+                <div class="shoe-detail-content">
+                    <div class="shoe-specs">
+                        <p><strong>Colour:</strong> Chestnut</p>
+                        <p><strong>Sizes:</strong> US 6, 7, 8, 9, 10, 11</p>
+                        <h3 class="shoe-price">$85.00</h3>
+                    </div>
+                    <p class="shoe-description">
+                        Hiking-inspired with everyday style, meet the Work and Walk boot. With leather upper, these lace-up ankle boots are built for long days on your feet. The exterior features our No-Worry leather to protect from scuff, stain and water. Plus, the inside is pretty comfy as well with a soft footbed that hugs your heel for extra support.
+                    </p>
+                    <ul class="shoe-bullet-points">
+                        <li>Upper is scuff, stain & water-resistant</li>
+                        <li>Breathable & soft foam backed mesh lining</li>
+                        <li>Padded collar is super soft on the heel</li>
+                        <li>Pull-tab for easy fitting</li>
+                        <li>Metal eyelet detail</li>
+                        <li>Footbed hugs your heel for extra support</li>
+                        <li>Removable insole to fit your own orthotics</li>
+                        <li>Dual Fit. Remove the insole for a wider fit</li>
+                    </ul>
+                    <div class="materials-box">
+                        <h4>Materials & Details</h4>
+                        <table class="materials-table">
+                            <tr><td>Product Code:</td><td>30144</td></tr>
+                            <tr><td>Sole Material:</td><td>Rubber</td></tr>
+                            <tr><td>Sock Material:</td><td>Pigskin</td></tr>
+                            <tr><td>Lining Material:</td><td>Mesh</td></tr>
+                            <tr><td>Upper Material:</td><td>Leather</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents-box full-width-view shoe-sally-view info-layout" style="display: none;">
+            <button class="back-btn" onclick="goBack()">←Back</button>
+            <h2>WOMENS SHOES — SALLY</h2>
+            <div class="shoe-detail-container">
+                <div class="shoe-gallery">
+                    <div class="shoe-detail-img"><img src="images/Sally_Tan.jpg" alt="Sally"></div>
+                </div>
+                <div class="shoe-detail-content">
+                    <div class="shoe-specs">
+                        <p><strong>Colour:</strong> Tan and black</p>
+                        <p><strong>Sizes:</strong> US 6, 7, 8, 9, 10, 11</p>
+                        <h3 class="shoe-price">$75.00</h3>
+                    </div>
+                    <p class="shoe-description">
+                        Sally our new favourite lightweight flat is giving our serious comfort goals, with it's soft semi line uppers and padded arch support.
+                    </p>
+                    <ul class="shoe-bullet-points">
+                        <li>Soft smooth leather uppers</li>
+                        <li>Semi lined uppers for a soft unstructured feel</li>
+                        <li>Super comfortable insole & padded arch support</li>
+                        <li>Super lightweight outsole helps to absorb shock</li>
+                        <li>Flexible & grippy outsole</li>
+                    </ul>
+                    <div class="materials-box">
+                        <h4>Materials & Details</h4>
+                        <table class="materials-table">
+                            <tr><td>Product Code:</td><td>301818</td></tr>
+                            <tr><td>Sole Material:</td><td>Phylon rubber</td></tr>
+                            <tr><td>Sock Material:</td><td>Pigskin</td></tr>
+                            <tr><td>Lining Material:</td><td>Leather/synthetic</td></tr>
+                            <tr><td>Upper Material:</td><td>Leather</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents-box full-width-view shoe-heavenly-view info-layout" style="display: none;">
+            <button class="back-btn" onclick="goBack()">←Back</button>
+            <h2>WOMENS SHOES — HEAVENLY</h2>
+            <div class="shoe-detail-container">
+                <div class="shoe-gallery">
+                    <div class="shoe-detail-img"><img src="images/Heavenly_Black.jpg" alt="Heavenly Black"></div>
+                </div>
+                <div class="shoe-detail-content">
+                    <div class="shoe-specs">
+                        <p><strong>Colour:</strong> Black</p>
+                        <p><strong>Sizes:</strong> US 6, 7, 8, 9, 10, 11</p>
+                        <h3 class="shoe-price">$90.00</h3>
+                    </div>
+                    <p class="shoe-description">
+                        Perfect for those on their feet all day who require leather uppers for easy cleaning. Featuring a super flexible and grippy outsole for durability and a soft padded footbed for extra comfort.
+                    </p>
+                    <ul class="shoe-bullet-points">
+                        <li>Soft leather uppers and lightly padded collar</li>
+                        <li>Plush footbed for added comfort</li>
+                        <li>Recycled heel grip</li>
+                        <li>Flexible and grippy outsole with 10% recycled material</li>
+                    </ul>
+                    <div class="materials-box">
+                        <h4>Materials & Details</h4>
+                        <table class="materials-table">
+                            <tr><td>Product Code:</td><td>21960</td></tr>
+                            <tr><td>Sole Material:</td><td>Rubber</td></tr>
+                            <tr><td>Sock Material:</td><td>Pigskin</td></tr>
+                            <tr><td>Lining Material:</td><td>Unlined</td></tr>
+                            <tr><td>Upper Material:</td><td>Leather</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents-box full-width-view shoe-clancy-view info-layout" style="display: none;">
+            <button class="back-btn" onclick="goBack()">←Back</button>
+            <h2>WOMENS SHOES — CLANCY</h2>
+            <div class="shoe-detail-container">
+                <div class="shoe-gallery">
+                    <div class="shoe-detail-img"><img src="images/Clancy_Blue.jpg" alt="Clancy Blue"></div>
+                </div>
+                <div class="shoe-detail-content">
+                    <div class="shoe-specs">
+                        <p><strong>Colour:</strong> Blue</p>
+                        <p><strong>Sizes:</strong> US 6, 7, 8, 9, 10, 11</p>
+                        <h3 class="shoe-price">$59.00</h3>
+                    </div>
+                    <p class="shoe-description">
+                        The Clancy sandal allows air circulation due to the holes on each side. These sandals provide support to tired feet. The arch support design eliminates any strain or imbalance. Stretchable mesh fabric allows an easy fit. Memory foam insoles.
+                    </p>
+                    <div class="materials-box">
+                        <h4>Materials & Details</h4>
+                        <table class="materials-table">
+                            <tr><td>Product Code:</td><td>30182</td></tr>
+                            <tr><td>Sole Material:</td><td>Rubber</td></tr>
+                            <tr><td>Sock Material:</td><td>Pigskin</td></tr>
+                            <tr><td>Lining Material:</td><td>Unlined</td></tr>
+                            <tr><td>Upper Material:</td><td>Leather</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents-box full-width-view info-layout about-view" style="display: none;">
+            <h2>About Us</h2>
+            <p>TipToe Soles is an Australian owned and operated company providing premium footwear layouts.</p>
+        </div>
+
+        <div class="contents-box full-width-view info-layout services-view" style="display: none;">
+            <h2>Our Services</h2>
+            <p>Custom fittings and shoe preservation guides.</p>
+        </div>
+
+        <div class="contents-box full-width-view info-layout delivery-view" style="display: none;">
+            <h2>Delivery Policy</h2>
+            <p>Dispatch details across regional and metro standard options.</p>
+        </div>
+
+        <div class="contents-box full-width-view info-layout policy-view" style="display: none;">
+            <h2>Returns and Exchange Policy</h2>
+            <p>Free change of mind returns within 28 days of purchase.</p>
+        </div>
+
+        <div class="contents-box full-width-view info-layout contact-view" style="display: none;">
+            <h2>Contact Details</h2>
+            <p>322 Avondale Road, Enfield NSW 2133</p>
+        </div>
+
+    </div>
+
+    <div class="myFooter">
+        <h2>TipToe Soles</h2>
+        <div class="footer-nav-links">
+            <a href="#" onclick="showPage('contact')">Contact Us</a>
+            <span class="divider">|</span>
+            <a href="#" onclick="showPage('delivery')">Delivery Policy</a>
+            <span class="divider">|</span>
+            <a href="#" onclick="showPage('policy')">Returns Policy</a>
+        </div>
+        
+        <div class="footer-social-links">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <span class="divider">•</span>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <span class="divider">•</span>
+            <a href="https://www.x.com" target="_blank" rel="noopener">X</a>
+        </div>
+        
+        <p class="copyright">© 2026 TipToe. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    var currentOrigin = 'home';
+
+    function showPage(pageId) {
+        if (pageId === 'home' || pageId === 'catalog') {
+            currentOrigin = pageId;
+        }
+
+        var views = document.querySelectorAll('.right-content-wrapper, .catalog-view, .about-view, .services-view, .delivery-view, .policy-view, .contact-view, .shoe-gary-view, .shoe-work-walk-view, .shoe-sally-view, .shoe-heavenly-view, .shoe-clancy-view');
+        views.forEach(function(el) { el.style.display = 'none'; });
+
+        if (pageId === 'home') {
+            document.querySelector('.right-content-wrapper').style.display = '';
+        } else {
+            var targetClass = '.' + pageId + '-view';
+            var activeViews = document.querySelectorAll(targetClass);
+            if (activeViews.length > 0) {
+                activeViews.forEach(function(el) { el.style.display = ''; });
+            }
+        }
+
+        if (pageId === 'contact' || pageId === 'policy' || pageId === 'delivery' || pageId === 'catalog' || pageId.substring(0, 5) === 'shoe-') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
+    function goBack() {
+        showPage(currentOrigin);
+    }
+</script>
+
+</body>
+</html>
